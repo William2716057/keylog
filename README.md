@@ -9,3 +9,10 @@ The script runs in an infinite loop, recording each key press until the ESC key 
 
 - Logs key presses to a file
 - Stops when the ESC key is pressed
+
+### Usage
+
+1. Open PowerShell.
+2. Navigate to the directory containing the script.
+3. Run the script using.
+
