@@ -12,7 +12,17 @@ The script runs in an infinite loop, recording each key press until the ESC key 
 
 ### Usage
 
-1. Open PowerShell.
-2. Navigate to the directory containing the script.
-3. Run the script using.
+2. Open PowerShell.
+3. Navigate to the directory containing the script.
+4. Run the script using.
+```
+keylogger.ps1
+```
+5. The script will start capturing key presses and logging them to results.txt.
+6. Press ES``C to stop the script.
 
+### Disclaimer
+
+This script is for educational and testing purposes only. 
+Unauthorized use of keyloggers may violate privacy laws and ethical guidelines. 
+Always obtain permission before using this script on any system.
