@@ -1,14 +1,16 @@
-$Host.UI.RawUI.FlushInputBuffer()
+# Ensure log file exists
+$logFile = "results.txt"
 
-Write-Host "Press any key to see its output. Press ESC to exit."
+if (!(Test-Path $logFile)) {
+    New-Item -Path $logFile -ItemType File -Force | Out-Null
+}
+
+Write-Host "Keylogger started. Press ESC to stop."
 
 while ($true) {
     $key = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown").VirtualKeyCode
-    
-    if ($key -eq 27) { # ESC key
-        Write-Host "Exiting..."
-        break
-    }
-    
-    Write-Host "Key Pressed: $([char]$key) (Code: $key)"
+    if ($key -eq 27) { break }
+    Add-Content -Path $logFile -Value "$(Get-Date) - Key Pressed: $([char]$key) (Code: $key)"
 }
+
+Write-Host "Keylogger stopped."
