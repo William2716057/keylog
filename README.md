@@ -19,7 +19,7 @@ The script runs in an infinite loop, recording each key press until the ESC key 
 keylogger.ps1
 ```
 5. The script will start capturing key presses and logging them to results.txt.
-6. Press ES``C to stop the script.
+6. Press ctrl+C to stop the script.
 
 ### Disclaimer
 
